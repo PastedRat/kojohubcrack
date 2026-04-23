@@ -154,7 +154,7 @@ end
 dlog("Loading API library from server...")
 local api = nil
 local apiOk, apiErr = pcall(function()
-    api = loadstring(game:HttpGet(https://raw.githubusercontent.com/PastedRat/kojohubcrack/refs/heads/main/library.lua))()
+    api = loadstring(game:HttpGet("https://raw.githubusercontent.com/PastedRat/kojohubcrack/refs/heads/main/library.lua"))()
 end)
 
 if not apiOk or not api then
