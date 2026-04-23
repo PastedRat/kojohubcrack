@@ -82,7 +82,7 @@ local SERVER_CONFIG = nil
 
 dlog("Fetching server config...")
 local configOk, configResult = pcall(function()
-    local raw = game:HttpGet(https://kojohub.pro/api/v1/loader/config?game_id=7633926880&place_id=114234929420007)
+    local raw = game:HttpGet("https://kojohub.pro/api/v1/loader/config?game_id=7633926880&place_id=114234929420007")
     return HttpService:JSONDecode(raw)
 end)
 
