@@ -27,7 +27,7 @@ local function resolveBaseUrl()
 end
 
 KojoAPI._BASE_URL = resolveBaseUrl()
-KojoAPI.script_id = nil  -- set by loader before calling check_key
+KojoAPI.script_id = 2
 
 -- ═══ Debug helper ════════════════════════════════════════════
 local _debug = false
