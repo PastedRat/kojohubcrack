@@ -152,7 +152,7 @@ end
 -- LOAD API LIBRARY FROM SERVER
 -- ═══════════════════════════════════════════════════════════════
 dlog("Loading API library from server...")
-local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/PastedRat/kojohubcrack/refs/heads/main/library.lua"))()
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/PastedRat/kojohubcrack/refs/heads/main/library.lua", true))()
 
 
 dlog("API library loaded, version:", api._VERSION or "?")
