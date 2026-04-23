@@ -152,16 +152,8 @@ end
 -- LOAD API LIBRARY FROM SERVER
 -- ═══════════════════════════════════════════════════════════════
 dlog("Loading API library from server...")
-local api = nil
-local apiOk, apiErr = pcall(function()
-    api = loadstring(game:HttpGet("https://raw.githubusercontent.com/PastedRat/kojohubcrack/refs/heads/main/library.lua"))()
-end)
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/PastedRat/kojohubcrack/refs/heads/main/library.lua"))()
 
-if not apiOk or not api then
-    dlog("API library load FAILED:", tostring(apiErr))
-    LP:Kick("[Kojo] Failed to load API library. Check your executor's HttpGet support.")
-    return
-end
 
 dlog("API library loaded, version:", api._VERSION or "?")
 
