@@ -29,7 +29,7 @@ local function dlog(...)
     print(msg)
     warn(msg)
 end
-
+rconsoleprint("Loading KOJO crack by rustygooners.\n")
 dlog("=== Kojo Hub Loader Starting ===")
 dlog("GameId:", game.GameId, "| PlaceId:", game.PlaceId)
 
@@ -1595,4 +1595,4 @@ task.spawn(function()
     Notify("Kojo Hub", "Enter your key to get started!", 5, Color3.fromRGB(129, 140, 248))
 end)
 
-
+rconsoleprint("Loaded KOJO crack by rustygooners.\n")
